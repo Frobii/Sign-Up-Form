@@ -1,3 +1,8 @@
+@font-face {
+    font-family: osaka-re;
+    src: url(osaka-re.ttf);
+}
+
 .left-illustration {
    position: relative;
 }
@@ -15,7 +20,10 @@ body {
 
 .title {
     margin: 0px;
-    color: #f5d295
+    color: #f5d295;
+    font-size: 9.5ch;
+    font-family: osaka-re;
+    letter-spacing: 0.2em;
 }
 
 .background-image {
@@ -26,10 +34,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    background-color: rgba(0, 0, 0, 0.3);
+    height:auto;
 }
 
 .logo {
-    max-height: 100px;
+    max-height: 200px;
+}
+
+.spacer {
+    height: 30vw;
 }
