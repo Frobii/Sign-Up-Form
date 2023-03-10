@@ -70,3 +70,34 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.form-spacer-top {
+    height: 15vh;
+}
+
+.form-description {
+    height: 15vh;
+}
+
+.form-fields {
+    height: 30vh;
+}
+
+.submit-container {
+    height: 10vh;
+}
+
+.form-footer {
+    height: 30vh
+}
+
+.fields {
+    display:flex;
+    justify-content: space-evenly;
+    height: 33%;
+}
+
+.labelledField {
+    display:grid;
+    padding: 20px
+}
