@@ -23,39 +23,45 @@
             <!-- <div class="credit-container">
                 <figcaption class="photo-credit">Photo by Fahrul Azmi on Unsplash</figcaption>
             </div> -->
-        </div> 
+        </div>
 
         <div class="form-container">
+            <div class="form-header">
+                <div class="form-spacer-top"></div>
+                <div class="form-description">
+                    <p>Temples are a place of peace. Sign up today to find the way to your nearest temple & experience the benefits today!</p>
+                </div>
+            </div>
             <form action="/sign-up-form/form-data/" method="post">
-                <fieldset>
-                    <legend>Sign up details</legend>
-                    <div>
+                <fieldset class="form-fields">
+                    <legend>Peacefully, complete the fields below</legend>
+                    <div class="name-fields">
                         <label for="fname">FIRST NAME</label>
                         <input id="fname" name="fname" type="text" required />
-                    </div>
-                    <div>
+
                         <label for="lname">LAST NAME</label>
                         <input id="lname" name="lname" type="text" required />
                     </div>
-                    <div>
+                    <div class="contact-fields">
                         <label for="email">EMAIL</label>
                         <input id="email" name="email" type="email" />
-                    </div>
-                    <div>
+
                         <label for="phone-number">PHONE NUMBER</label>
                         <input id="phone-number" name="phone-number" type="text" />
                     </div>
-                    <div>
+                    <div class="password-fields">
                         <label for="user_password">PASSWORD</label>
                         <input type="password" id="user_password" name="password">
-                    </div>
-                    <div>
+
                         <label for="confirmPassword">CONFIRM PASSWORD</label>
                         <input type="password" id="confirmPassword" name="password">
                     </div>
-                    <div><button>Submit</button></div>
                 </fieldset>
+                <div><button>Submit</button></div>
             </form>
+            <div class="formFooter">
+                <p class="existing-user-portal">Already found peace? Log in</p>
+            </div>
         </div>
 
     </div>
