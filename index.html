@@ -8,25 +8,57 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="body-container">
+    <div class="body-container">
 
-    <div class="left-illustration">
-        <img class="background-image" src="osaka-temple.jpg" alt="background image">
+        <div class="left-illustration">
+            <img class="background-image" src="osaka-temple.jpg" alt="background image">
 
-        <div class="spacer"></div>
+            <div class="spacer"></div>
 
-        <div class="logo-container">
-            <img class="logo" src="temple-logo.svg" alt="temple logo">
-            <h1 class="title">Temples</h1>
+            <div class="logo-container">
+                <img class="logo" src="temple-logo.svg" alt="temple logo">
+                <h1 class="title">Temples</h1>
+            </div>
+
+            <!-- <div class="credit-container">
+                <figcaption class="photo-credit">Photo by Fahrul Azmi on Unsplash</figcaption>
+            </div> -->
+        </div> 
+
+        <div class="form-container">
+            <form action="/sign-up-form/form-data/" method="post">
+                <fieldset>
+                    <legend>Sign up details</legend>
+                    <div>
+                        <label for="fname">FIRST NAME</label>
+                        <input id="fname" name="fname" type="text" required />
+                    </div>
+                    <div>
+                        <label for="lname">LAST NAME</label>
+                        <input id="lname" name="lname" type="text" required />
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input id="email" name="email" type="email" />
+                    </div>
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input id="phone-number" name="phone-number" type="text" />
+                    </div>
+                    <div>
+                        <label for="user_password">PASSWORD</label>
+                        <input type="password" id="user_password" name="password">
+                    </div>
+                    <div>
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmPassword" name="password">
+                    </div>
+                    <div><button>Submit</button></div>
+                </fieldset>
+            </form>
         </div>
 
     </div>
 
-    <div class="form-container">
-        <form action=""></form>
-    </div>
-
-</div>
-    
 </body>
 </html>
