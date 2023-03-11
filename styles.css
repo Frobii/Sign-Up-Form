@@ -3,6 +3,15 @@
     src: url(osaka-re.ttf);
 }
 
+@font-face {
+    font-family: roboto-slap;
+    src: url(RobotoSlab-VariableFont_wght.ttf);
+}
+
+fieldset {
+    box-shadow:  0px 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
 .left-illustration {
    position: relative;
    height: 100vh;
@@ -77,10 +86,25 @@ body {
 
 .form-description {
     height: 15vh;
+    font-family: roboto-slap;
+}
+
+legend {
+    font-family: roboto-slap;
+}
+
+.existing-user-portal {
+    font-family: roboto-slap;
+}
+
+label {
+    font-family: roboto-slap;
 }
 
 .form-fields {
     height: 30vh;
+    border: none;
+    background-color: #ffffff36;
 }
 
 .submit-container {
@@ -107,3 +131,26 @@ legend {
     position:absolute;
 }
 
+.form-header * {
+    background-color: #f5d2950e;
+}
+
+.form-footer {
+    background-color: #f5d2950e;
+}
+
+.submit-container {
+    background-color: #f5d2950e;
+}
+
+.form-description p {
+    margin: 0px;
+
+    background-color: transparent;
+}
+
+
+.form-footer p {
+    margin: 0px;
+    background-color: transparent;
+  }
