@@ -133,7 +133,7 @@ label {
     height: 30vh
 }
 
-.labelledField {
+.labelled-field {
     display:grid;
     padding: 10px;
     height: 50px;
