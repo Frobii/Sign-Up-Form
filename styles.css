@@ -94,18 +94,21 @@ form {
 .form-description {
     height: 15vh;
     font-family: roboto-slap;
+    font-size: 24px;
 }
 
 legend {
     font-family: roboto-slap;
+    font-size: 24px;
 }
 
 .existing-user-portal {
     font-family: roboto-slap;
+    font-size: 18px;
 }
 
 label {
-    font-family: roboto-slap;
+    font-family: ubuntu;
 }
 
 .form {
@@ -137,6 +140,7 @@ label {
     display:grid;
     padding: 10px;
     height: 50px;
+    padding-left: 0px;
 }
 
 input {
@@ -158,6 +162,7 @@ legend {
 
 .form-footer {
     background-color: #f5d2950e;
+    height: 40vh;
 }
 
 .submit-container {
@@ -176,7 +181,7 @@ legend {
     background-color: transparent;
 }
 
-.btn {
+.submit-button {
     background: #fcc25f;
     border-radius: 16px;
     box-shadow: 0px 4px 4px #6666665e;
@@ -188,9 +193,10 @@ legend {
     text-decoration: none;
     border: none;
     width: 225px;
-  }
+    height: 60px;
+}
   
-  .btn:hover {
-    background: #fab949;
-    text-decoration: none;
-  }
+.submit-button:hover {
+background: #fab949;
+text-decoration: none;
+}
