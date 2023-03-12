@@ -30,6 +30,9 @@ fieldset {
 
 body {
     margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
@@ -65,7 +68,7 @@ body {
 }
 
 .form-container {
-    width: 60vw;
+    width: 800px;
     height: 100vh;
     z-index: 1;
     background-color: white;
