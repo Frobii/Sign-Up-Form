@@ -15,9 +15,10 @@ fieldset {
 }
 
 .left-illustration {
-   position: relative;
-   height: 100vh;
-   overflow: hidden;
+    height: 100vh;
+    width: 550px;
+    position: relative;
+    overflow: hidden;
 }
 
 .left-illustration .background-image {
@@ -40,7 +41,7 @@ body {
 .title {
     margin: 0px;
     color: #f5d295;
-    font-size: 8ch;
+    font-size: 4em;
     font-family: osaka-re;
     letter-spacing: 0.2em;
 }
@@ -54,15 +55,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
-    height:160px;
+    height: 10%;
     width: 100%;
 }
 
 .logo {
-    max-height: 200px;
-    max-width: 160px;
-    width: 20vw;
-    height: 20vw;
+    max-height: 150%;
+    max-width: 150%;
+    height: 120%;
 }
 
 .spacer {
@@ -90,14 +90,12 @@ form {
 }
 
 .form-spacer-top {
-    height: 15vh;
+    height: 50%;
 }
 
 .form-description {
-    height: 12.5vh;
     font-family: roboto-slap;
-    font-size: 24px;
-    padding-bottom: 5vh;
+    font-size: 1.5rem;
 }
 
 .form-description p {
@@ -108,7 +106,7 @@ form {
 
 legend {
     font-family: ubuntu;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.835);
     padding: 0px;
@@ -118,7 +116,7 @@ legend {
 
 .existing-user-portal {
     font-family: roboto-slap;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 label {
@@ -142,7 +140,6 @@ label {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: space-around;
-    max-width: 700px;
     padding-bottom: 40px
 }
 
@@ -153,10 +150,10 @@ label {
 .labelled-field {
     display:grid;
     padding: 10px;
-    height: 50px;
+    height: 25%;
     padding-left: 0px;
     padding-right: 50px;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 input {
@@ -184,6 +181,7 @@ legend {
 
 .form-header {
     background-color: #f5d29514;
+    height: 33%;
 }
 
 .form-footer {
@@ -207,13 +205,13 @@ legend {
     box-shadow: 0px 4px 4px #6666665e;
     font-family: roboto-slap;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bolder;
     padding: 15px 20px 15px 20px;
     text-decoration: none;
     border: none;
-    width: 240px;
-    height: 60px;
+    width: 30%;
+    height: 12%;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -234,7 +232,6 @@ a:hover {
 
 .credit-container {
     display: flex;
-
 }
 
 figcaption {
@@ -250,6 +247,6 @@ figcaption {
     font-family: ubuntu;
     font-size:smaller;
     color: rgb(155, 0, 0);
-    height: 15px;
-    width: 160px;
+    height: 5%;
+    width: 100%;
 }
