@@ -64,6 +64,7 @@
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
                             <input type="password" id="confirmPassword" name="password">
                         </div>
+                        <div id="passwordMessage">* Passwords do not match</div>
                     </div>
                 </fieldset>
                 <div class="form-footer">
@@ -78,21 +79,24 @@
     <script>
         const passwordInput = document.getElementById("userPassword");
         const confirmPasswordInput = document.getElementById("confirmPassword");
-        const message = document.getElementById("message");
+        const message = document.getElementById("passwordMessage");
 
         function checkPasswordsMatch() {
             if (passwordInput.value.length == 0 && confirmPasswordInput.value.length == 0) {
                 passwordInput.style.border = "1px solid red"
                 confirmPasswordInput.style.border = "1px solid red"
+                message.innerHTML = "* Passwords do not match"
                 return
             }
 
             if (passwordInput.value != confirmPasswordInput.value) {
                 passwordInput.style.border = "1px solid red"
                 confirmPasswordInput.style.border = "1px solid red"
+                message.innerHTML = "* Passwords do not match"
             } else {
                 passwordInput.style.border = "1px solid green"
                 confirmPasswordInput.style.border = "1px solid green"
+                message.innerHTML = ""
             }
         }
 

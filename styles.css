@@ -245,3 +245,11 @@ figcaption {
     font-weight: bolder;
     background-color: rgba(0,0,0, 0.2);
 }
+
+#passwordMessage {
+    font-family: ubuntu;
+    font-size:smaller;
+    color: rgb(155, 0, 0);
+    height: 15px;
+    width: 160px;
+}
