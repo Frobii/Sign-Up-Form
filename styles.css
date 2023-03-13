@@ -231,3 +231,17 @@ a {
 a:hover {
     color: #ffa60c;
 }
+
+.credit-container {
+    display: flex;
+
+}
+
+figcaption {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    font-family: roboto-slap;
+    font-weight: bolder;
+    background-color: rgba(0,0,0, 0.2);
+}
