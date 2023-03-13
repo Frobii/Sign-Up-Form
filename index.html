@@ -56,8 +56,8 @@
                         </div>
 
                         <div class="labelled-field">
-                            <label for="user_password">PASSWORD</label>
-                            <input type="password" id="user_password" name="password">
+                            <label for="userPassword">PASSWORD</label>
+                            <input type="password" id="userPassword" name="password">
                         </div>
 
                         <div class="labelled-field">
@@ -76,14 +76,29 @@
     </div>
 
     <script>
-        function validatePassword() {
-          var password = document.getElementById("password").value;
-          var confirmPassword = document.getElementById("confirmPassword").value;
-          if (password != confirmPassword) {
-            alert("Passwords do not match.");
-            return false;
-          }
+        const passwordInput = document.getElementById("userPassword");
+        const confirmPasswordInput = document.getElementById("confirmPassword");
+        const message = document.getElementById("message");
+
+        function checkPasswordsMatch() {
+            if (passwordInput.value.length == 0 && confirmPasswordInput.value.length == 0) {
+                passwordInput.style.border = "1px solid rgba(0, 0, 0, 0.169)"
+                confirmPasswordInput.style.border = "1px solid rgba(0, 0, 0, 0.169)"
+                return
+            }
+
+            if (passwordInput.value != confirmPasswordInput.value) {
+                passwordInput.style.border = "1px solid red"
+                confirmPasswordInput.style.border = "1px solid red"
+            } else {
+                passwordInput.style.border = "1px solid green"
+                confirmPasswordInput.style.border = "1px solid green"
+            }
         }
+
+        passwordInput.addEventListener("input", checkPasswordsMatch);
+        confirmPasswordInput.addEventListener("input", checkPasswordsMatch);
+
     </script>
 
 </body>
