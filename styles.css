@@ -97,7 +97,7 @@ form {
     height: 12.5vh;
     font-family: roboto-slap;
     font-size: 24px;
-    padding-bottom: 2.5vh;
+    padding-bottom: 5vh;
 }
 
 .form-description p {
@@ -109,6 +109,8 @@ form {
 legend {
     font-family: ubuntu;
     font-size: 24px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.835);
     padding: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -154,6 +156,7 @@ label {
     height: 50px;
     padding-left: 0px;
     padding-right: 50px;
+    font-size: 13px;
 }
 
 input {
@@ -176,7 +179,7 @@ legend {
 .form-footer {
     background-color: #f5d29514;
     padding-left: 40px;
-    height: 45vh;
+    height: 40vh;
 }
 
 .submit-container {
@@ -206,6 +209,15 @@ legend {
 }
   
 .submit-button:hover {
-background: #fab949;
-text-decoration: none;
+    background: #fab949;
+    text-decoration: none;
+}
+
+a {
+    color: #fcc25f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffa60c;
 }
