@@ -26,47 +26,48 @@
         </div>
 
         <div class="form-container">
-            <div class="form-header">
-                <div class="form-spacer-top"></div>
-                <div class="form-description">
-                    <p class="form-description">Your temple is a place of peace. <br> Sign up today to find the way to your<br> nearest temple & experience the benefits today! <br><br>You <em>know</em> you want peace. </p>
-                </div>
+            <div class="form-description">
+                <p class="form-description">Your temple is a place of peace. <br> Sign up today to find the way to your<br> nearest temple & experience the benefits today! <br><br>You <em>know</em> you want peace. </p>
             </div>
+
             <form action="/sign-up-form/form-data/" method="post">
-                <fieldset class="form">
+                
+                <fieldset class="form-fieldset">
                     <legend>Peacefully, complete the fields below!</legend>
-                    <div class="inputs">
-                        <div class="labelled-field">
-                            <label for="fname">FIRST NAME</label>
-                            <input id="fname" name="fname" type="text" required />
-                        </div>
-                        <div class="labelled-field">
-                            <label for="lname">LAST NAME</label>
-                            <input id="lname" name="lname" type="text" required />
-                        </div>
+                        <div class="form-grid">
+                            <div class="form-grid-item">
+                                <label for="fname">FIRST NAME</label>
+                                <input id="fname" name="fname" type="text" required />
+                            </div>
 
-                        <div class="labelled-field">
-                            <label for="email">EMAIL</label>
-                            <input id="email" name="email" type="email" />
-                        </div>
+                            <div class="form-grid-item">
+                                <label for="lname">LAST NAME</label>
+                                <input id="lname" name="lname" type="text" required />
+                            </div>
 
-                        <div class="labelled-field">
-                            <label for="phone-number">PHONE NUMBER</label>
-                            <input id="phone-number" name="phone-number" type="text" />
-                        </div>
+                            <div class="form-grid-item">
+                                <label for="email">EMAIL</label>
+                                <input id="email" name="email" type="email" />
+                            </div>
 
-                        <div class="labelled-field">
-                            <label for="userPassword">PASSWORD</label>
-                            <input type="password" id="userPassword" name="password">
-                        </div>
+                            <div class="form-grid-item">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input id="phone-number" name="phone-number" type="text" />
+                            </div>
 
-                        <div class="labelled-field">
-                            <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmPassword" name="password">
+                            <div class="form-grid-item">
+                                <label for="userPassword">PASSWORD</label>
+                                <input type="password" id="userPassword" name="password">
+                            </div>
+
+                            <div class="form-grid-item">
+                                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirmPassword" name="password">
+                            </div>
                         </div>
-                        <div id="passwordMessage">* Passwords do not match</div>
-                    </div>
+                    <div id="passwordMessage">* Passwords do not match</div>
                 </fieldset>
+
                 <div class="form-footer">
                     <input type="submit" class="submit-button" value="Create Account">
                     <p class="existing-user-portal">Already found peace? <a href="">Log In</a></p>

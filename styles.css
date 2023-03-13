@@ -74,10 +74,14 @@ body {
     height: 100vh;
     z-index: 1;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .body-container {
@@ -94,14 +98,20 @@ form {
 }
 
 .form-description {
+    background-color: #f5d29514;
     font-family: roboto-slap;
     font-size: 1.5rem;
+    height: 33%;
+    position: relative;
+    min-height: 150px;
 }
 
 .form-description p {
     margin: 0px;
     padding-left: 40px;
     background-color: transparent;
+    position: absolute;
+    bottom: 10%;
 }
 
 legend {
@@ -123,37 +133,28 @@ label {
     font-family: ubuntu;
 }
 
-.form {
+form {
+    height: 67%;
+}
+
+.form-fieldset {
     border: none;
-    background-color: #ffffff36;
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    background-color: #ffffff36;
+    height: fit-content;
     margin: 0px;
     padding: 0px;
     padding-left: 40px;
-}
-
-.inputs {
-    height: 30vh;
-    display:flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: space-around;
-    padding-bottom: 40px
+    padding-bottom: 40px;
 }
 
 .submit-container {
     height: 10vh;
 }
 
-.labelled-field {
-    display:grid;
-    padding: 10px;
-    height: 25%;
-    padding-left: 0px;
-    padding-right: 50px;
-    font-size: 0.8rem;
+label {
+    display: flex !important;
 }
 
 input {
@@ -174,20 +175,25 @@ input[type="password"] {
     border: 1px solid red;
 }
 
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
 legend {
     float:left;
     position:relatve;
-}
-
-.form-header {
-    background-color: #f5d29514;
-    height: 33%;
+    width: 100%;
 }
 
 .form-footer {
     background-color: #f5d29514;
     padding-left: 40px;
-    height: 40vh;
+    padding-top: 40px;
+    flex-grow: 1;
+    max-height: calc(100vh - 33%);
+    overflow-y: auto;
 }
 
 .submit-container {
@@ -207,13 +213,12 @@ legend {
     color: #ffffff;
     font-size: 1.3rem;
     font-weight: bolder;
-    padding: 15px 20px 15px 20px;
-    text-decoration: none;
     border: none;
     width: 30%;
-    height: 12%;
-    margin-top: 40px;
+    height: 58px;
     margin-bottom: 40px;
+    text-align: center;
+    display:block;
 }
   
 .submit-button:hover {
@@ -247,6 +252,6 @@ figcaption {
     font-family: ubuntu;
     font-size:smaller;
     color: rgb(155, 0, 0);
-    height: 5%;
+    height: 10px;
     width: 100%;
 }
